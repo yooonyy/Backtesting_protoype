@@ -3,7 +3,7 @@
 # 포트폴리오 백테스팅 프로젝트
 
 ## 설명
-이 프로젝트는 역사적 데이터를 사용하여 다양한 포트폴리오 전략을 평가하기 위한 종합적인 백테스팅 프레임워크입니다. 데이터 전처리, 전략 정의, 성능 지표 계산, 결과 시각화 등의 모듈을 포함하고 있습니다.
+이 프로젝트는 yfinance를 통해 S&P500과 NASDAQ100에 포함된 종목들의 일별 주가 데이터를 사용하여 포트폴리오 전략을 평가하기 위한 종합적인 백테스팅 프레임워크입니다. 데이터 전처리, 전략 정의, 성능 지표 계산, 결과 시각화 등의 모듈을 포함하고 있습니다.
 연세대학교 금융공학 및 리스크관리 학회 Y-FoRM에서 실습 세션을 진행하며, 당장은 처음보는 이들에게 설명하기 위한 목적으로 작성되어 있습니다.
 
 ### 프로젝트 맥락
@@ -20,7 +20,27 @@
 - **성능 계산**: CAGR, 최대 손실(MDD), 샤프 비율과 같은 지표를 사용하여 전략을 평가합니다.
 - **시각화**: 전략 성능과 비교를 그래픽으로 표현합니다.
 
-## 설치
+## 사용법
+
+### 백테스트 실행
+백테스트를 실행하려면 `portfolio_backtesting.ipynb` 노트북을 실행하세요:
+```bash
+jupyter notebook portfolio_backtesting.ipynb
+```
+노트북 내의 지시사항을 따라 전략을 선택하고 매개변수를 설정한 다음 시뮬레이션을 실행하세요.
+
+### 모듈 관계도
+<img src="backtesting_function/description.png" width="500">
+
+### 모듈 개요
+- `base_setting.py`: 초기 투자 설정 및 데이터 색인을 포함하여 백테스팅 환경을 구성합니다.
+- `performance.py`: CAGR, MDD, 샤프 비율과 같은 주요 성능 지표를 계산하는 함수를 포함합니다.
+- `strategies.py`: 모멘텀과 변동성 조정을 기반으로 다양한 투자 전략을 정의합니다. 비중을 output으로 제공하는 전략을 추가할 수 있습니다.
+- `tool_kits.py`, `visualize.py`, `visualize_v2.py`, `visualize_v3.py`: 백테스팅 결과 분석을 위한 다양한 유틸리티 및 시각화 도구를 제공합니다.
+
+
+## 저자
+- 조성윤(seongyun, cho)
 
 ### 필수 조건
 - Python 3.x
@@ -38,22 +58,3 @@ git clone https://github.com/your-username/portfolio-backtesting.git
 ```bash
 pip install -r requirements.txt
 ```
-
-## 사용법
-
-### 백테스트 실행
-백테스트를 실행하려면 `portfolio_backtesting.ipynb` 노트북을 실행하세요:
-```bash
-jupyter notebook portfolio_backtesting.ipynb
-```
-노트북 내의 지시사항을 따라 전략을 선택하고 매개변수를 설정한 다음 시뮬레이션을 실행하세요.
-
-### 모듈 개요
-- `base_setting.py`: 초기 투자 설정 및 데이터 색인을 포함하여 백테스팅 환경을 구성합니다.
-- `performance.py`: CAGR, MDD, 샤프 비율과 같은 주요 성능 지표를 계산하는 함수를 포함합니다.
-- `strategies.py`: 모멘텀과 변동성 조정을 기반으로 다양한 투자 전략을 정의합니다.
-- `tool_kits.py`, `visualize.py`, `visualize_v2.py`, `visualize_v3.py`: 백테스팅 결과 분석을 위한 다양한 유틸리티 및 시각화 도구를 제공합니다.
-
-
-## 저자
-- 조성윤(seongyun, cho)
