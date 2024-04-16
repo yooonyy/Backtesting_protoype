@@ -1,4 +1,4 @@
-**Other languages**: [한국어](README.ko.md)
+**Other languages**: [한국어 README 바로가기](README.ko.md)
 
 # Portfolio Backtesting Project
 
