@@ -1,4 +1,4 @@
-**다른 언어**: [English](README.md)
+**다른 언어**: [English README](README.md)
 
 # 포트폴리오 백테스팅 프로젝트
 
@@ -21,7 +21,9 @@
 - **시각화**: 전략 성능과 비교를 그래픽으로 표현합니다.
 
 ## 사용법
+- 추후 상세 설명 추가
 
+  
 ### 백테스트 실행
 백테스트를 실행하려면 `portfolio_backtesting.ipynb` 노트북을 실행하세요:
 ```bash
@@ -38,7 +40,6 @@ jupyter notebook portfolio_backtesting.ipynb
 - `strategies.py`: 모멘텀과 변동성 조정을 기반으로 다양한 투자 전략을 정의합니다. 비중을 output으로 제공하는 전략을 추가할 수 있습니다.
 - `tool_kits.py`, `visualize.py`, `visualize_v2.py`, `visualize_v3.py`: 백테스팅 결과 분석을 위한 다양한 유틸리티 및 시각화 도구를 제공합니다.
 
-
 ## 저자
 - 조성윤(seongyun, cho)
 
@@ -48,13 +49,3 @@ jupyter notebook portfolio_backtesting.ipynb
 - Numpy
 - Matplotlib
 
-로컬 머신에 이 저장소를 클론하려면 다음을 사용하세요:
-```bash
-git clone https://github.com/your-username/portfolio-backtesting.git
-```
-
-### 설정
-필요한 파이썬 패키지를 설치하세요:
-```bash
-pip install -r requirements.txt
-```
