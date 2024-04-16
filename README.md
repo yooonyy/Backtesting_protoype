@@ -19,9 +19,29 @@ This project is a comprehensive backtesting framework designed to evaluate vario
 - **Performance Calculation**: Evaluate strategies using metrics like CAGR, Maximum Drawdown, and Sharpe Ratio.
 - **Visualization**: Graphically represent strategy performance and comparisons.
 
-## Installation
+## Usage
 
-### Prerequisites
+
+### Running the Backtest
+To run the backtest, execute the `portfolio_backtesting.ipynb` notebook:
+```bash
+jupyter notebook portfolio_backtesting.ipynb
+```
+Follow the instructions within the notebook to select your strategies, set parameters, and run the simulations.
+
+### Modules relation
+<img src="backtesting_function/description.png" width="500">
+
+### Modules Overview
+- `base_setting.py`: Configures the backtesting environment, including initial investment setup and data indexing.
+- `performance.py`: Contains functions to calculate key performance indicators such as CAGR, MDD, and Sharpe Ratio.
+- `strategies.py`: Defines different investment strategies based on momentum and volatility adjustments.
+- `tool_kits.py`, `visualize.py`, `visualize_v2.py`, `visualize_v3.py`: Provide various utilities and visualization tools for analyzing backtesting results.
+
+## Authors
+- seongyun, cho
+
+- ### Prerequisites
 - Python 3.x
 - Pandas
 - Numpy
@@ -37,27 +57,3 @@ Install the required Python packages:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Usage
-
-### Running the Backtest
-To run the backtest, execute the `portfolio_backtesting.ipynb` notebook:
-```bash
-jupyter notebook portfolio_backtesting.ipynb
-```
-Follow the instructions within the notebook to select your strategies, set parameters, and run the simulations.
-
-### Modules Overview
-- `base_setting.py`: Configures the backtesting environment, including initial investment setup and data indexing.
-- `performance.py`: Contains functions to calculate key performance indicators such as CAGR, MDD, and Sharpe Ratio.
-- `strategies.py`: Defines different investment strategies based on momentum and volatility adjustments.
-- `tool_kits.py`, `visualize.py`, `visualize_v2.py`, `visualize_v3.py`: Provide various utilities and visualization tools for analyzing backtesting results.
-
-## Contributing
-Contributions to this project are welcome! Please fork the repository and submit a pull request with your enhancements.
-
-## License
-Specify your license or link to it.
-
-## Authors
-- Your Name
