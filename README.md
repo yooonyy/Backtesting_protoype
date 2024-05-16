@@ -3,7 +3,7 @@
 # Portfolio Backtesting Project
 
 ## Description
-This project is a comprehensive backtesting framework designed to evaluate various portfolio strategies using historical data. It includes modules for preprocessing data, defining strategies, calculating performance metrics, and visualizing results.
+This project is a comprehensive backtesting framework designed to evaluate various portfolio strategies using historical data. It includes modules for preprocessing data, defining strategies, calculating performance metrics, and visualizing results. BUT it's not complete version.
 
 ### Project Context
 - **Scope**: This project is a focused component of a larger endeavor to build an Algorithm Trading System Structure. It aims to test the viability of specific trading strategies under simulated conditions.
@@ -41,8 +41,3 @@ Follow the instructions within the notebook to select your strategies, set param
 ## Authors
 - seongyun, cho
 
-- ### Prerequisites
-- Python 3.x
-- Pandas
-- Numpy
-- Matplotlib
